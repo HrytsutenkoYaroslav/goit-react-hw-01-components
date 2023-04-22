@@ -5,6 +5,7 @@ text-align: center;
 width: 350px;
 border-radius: 4px;
 background-color: white;
+margin-top: 20px;
 `;
 
 export const Title = styled.h2`
