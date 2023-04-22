@@ -1,7 +1,7 @@
-import user from 'data/user.json';
-import data from 'data/data.json';
-import friends from 'data/friends.json';
-import transactions from 'data/transactions.json';
+import user from 'Data/user.json';
+import data from 'Data/data.json';
+import friends from 'Data/friends.json';
+import transactions from 'Data/transactions.json';
 import { Container } from '../App/AppStyles';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics//Statistics';
@@ -21,7 +21,8 @@ export const App = () => {
       />
       <Statistics title="Upload Stats" stats={data} />
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
     </Container>
   );
 };
+
