@@ -17,7 +17,8 @@ export const Statistics = ({ title, stats }) => {
       labels[label] = percentage;
     }
   });
-  const newStats = Object.entries(labels).map(([label, percentage]) => ({
+  const newStats = Object.entries(labels).map(([ label, percentage], index) => ({
+    id: index,
     label,
     percentage,
   }));
